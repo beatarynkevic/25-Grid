@@ -1,0 +1,31 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+    .container {
+        display: grid;
+        padding: 10px;
+    }
+       
+        .navigation {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 60px;
+        }
+            .navigation > div:nth-child(1n) {
+                background-color: #96ceb4;
+                grid-column: 1 / span 2;
+                
+            }
+            .navigation > div:nth-child(2n) {
+                background-color: #ff6f69;
+                grid-column: 6 / span 3;
+            }
+            .navigation > div:nth-child(3n) {
+                background-color: #25eb88;
+                grid-column: 11 / span 2;
+              }
