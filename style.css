@@ -7,25 +7,94 @@ body * {
 }
     .container {
         display: grid;
+        gap: 0.5em;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 60px 1fr 1fr 1fr 60px 60px;
         padding: 10px;
+        height: 100vh;
     }
        
         .navigation {
             background-color: aliceblue;
+            grid-column: span 12;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 60px;
+            /* grid-template-rows: 60px; */
         }
-            .navigation > div:nth-child(1n) {
-                background-color: #96ceb4;
+            .navigation .logo {
+                background-color: #25eb88;
                 grid-column: 1 / span 2;
                 
             }
-            .navigation > div:nth-child(2n) {
-                background-color: #ff6f69;
-                grid-column: 6 / span 3;
+            .navigation .nav {
+                background-color: #25eb88;
+                grid-column: 6 / span 2;
             }
-            .navigation > div:nth-child(3n) {
+            .navigation .soc {
                 background-color: #25eb88;
                 grid-column: 11 / span 2;
-              }
+            }
+        .hero {
+            grid-column: span 12;
+            background-color: aliceblue;
+        }
+        .testimonials {
+            grid-column: span 10;
+            background-color: aliceblue;
+            padding: 0 15px;
+        }
+        h1 {
+            text-align: center;
+            line-height: 60px;
+        }
+            .left {
+                float: left;
+                background-color: #25eb88;
+                height: 50%;
+                width: 49%;
+            }
+            .right {
+                float: right;
+                background-color: #25eb88;
+                height: 50%;
+                width: 49%;
+            }
+        .services {
+            grid-column: span 10;
+            background-color: aliceblue;
+            padding: 0 15px;
+            width: 100%;
+        }
+            .one {
+                display: inline-block;
+                background-color: #25eb88;
+                height: 50%;
+                width: 32.3%;
+                margin-right: 10px;
+            }
+            .two {
+                display: inline-block;
+                background-color: #25eb88;
+                height: 50%;
+                width: 32.3%;
+                margin-right: 10px;
+            }
+            .three {
+                display: inline-block;
+                background-color: #25eb88;
+                height: 50%;
+                width: 32.3%;
+            }
+        .ads {
+            grid-column: 11 / 13;
+            grid-row: 3 / span 3;
+            background-color: aliceblue;
+        }
+        .freelance {
+            grid-column: span 10;
+            background-color: aliceblue;
+        }
+        footer {
+            grid-column: span 12;
+            background-color: aliceblue;
+        }
